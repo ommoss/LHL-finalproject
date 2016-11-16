@@ -16,10 +16,12 @@ class App extends React.Component {
         <div>
           <nav>
             <h1>Consocial</h1>
-              <Button className = "navRight">Sign Up</Button>
-              <Button className = "navRight">Login</Button>
-              <Button className = "navRight btn">Create tournament</Button>
-              <Button className = "btn-primary navRight">Find tournament</Button>
+            <ButtonToolbar className = "navRight">
+              <Button>Sign Up</Button>
+              <Button>Login</Button>
+              <Button>Create tournament</Button>
+              <Button className = "btn-primary">Find tournament</Button>
+            </ButtonToolbar>
           </nav>
 
         </div>
