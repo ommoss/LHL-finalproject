@@ -14,6 +14,9 @@ class App extends React.Component {
         <div>
           <nav>
             <h1>Consocial</h1>
+            <div>
+              <button className="btn-primary">Hey</button>
+            </div>
           </nav>
         </div>
         <footer></footer>
