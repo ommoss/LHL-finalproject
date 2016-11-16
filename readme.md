@@ -1,0 +1,3 @@
+-Consocial is a tournament finder for console games
+-It allows you to find tournaments as well as host them
+-
