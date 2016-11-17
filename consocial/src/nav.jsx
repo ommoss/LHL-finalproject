@@ -20,29 +20,29 @@ class Nav extends React.Component {
     return(
 
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={6} md={6}>
         <h1>Consocial</h1>
         </Col>
-        <Col xs={6} md={4}>
-        <ButtonToolbar className = "navRight">
+        <Col xs={6} md={6}>
+          <ButtonToolbar className = "navRight">
             <ButtonGroup>
-              <Button>Create tournament</Button>
-              <Button>Find tournament</Button>
-            </ButtonGroup>
-            <ButtonGroup>
-              <Button>Sign Up</Button>
-              <DropdownButton pullRight id = "login" title = "Login">
-                <form>
-                  <FormGroup controlId = "login">
-                    <ControlLabel>Username</ControlLabel>
-                    <FormControl type = "text" />
-                    <ControlLabel>Password</ControlLabel>
-                    <FormControl type = "text" />
-                  </FormGroup>
-                </form>
-              </DropdownButton>
-            </ButtonGroup>
-        </ButtonToolbar>
+                <Button>Create tournament</Button>
+                <Button>Find tournament</Button>
+              </ButtonGroup>
+              <ButtonGroup>
+                <Button>Sign Up</Button>
+                <DropdownButton pullRight id = "login" title = "Login">
+                  <form>
+                    <FormGroup controlId = "login">
+                      <ControlLabel>Username</ControlLabel>
+                      <FormControl type = "text" />
+                      <ControlLabel>Password</ControlLabel>
+                      <FormControl type = "text" />
+                    </FormGroup>
+                  </form>
+                </DropdownButton>
+              </ButtonGroup>
+          </ButtonToolbar>
         </Col>
       </Row>
     );
