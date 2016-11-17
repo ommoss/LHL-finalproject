@@ -7,6 +7,8 @@ import DropdownButton from 'react-bootstrap/lib/DropdownButton';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import FormControl from 'react-bootstrap/lib/FormControl';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
 
 class Nav extends React.Component {
   constructor(props){
@@ -16,9 +18,13 @@ class Nav extends React.Component {
 
   render() {
     return(
-      <div>
+
+      <Row>
+        <Col xs={12} md={8}>
         <h1>Consocial</h1>
-          <ButtonToolbar className = "navRight">
+        </Col>
+        <Col xs={6} md={4}>
+        <ButtonToolbar className = "navRight">
             <ButtonGroup>
               <Button>Create tournament</Button>
               <Button>Find tournament</Button>
@@ -36,8 +42,9 @@ class Nav extends React.Component {
                 </form>
               </DropdownButton>
             </ButtonGroup>
-          </ButtonToolbar>
-      </div>
+        </ButtonToolbar>
+        </Col>
+      </Row>
     );
   }
 }
