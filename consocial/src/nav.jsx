@@ -6,6 +6,7 @@ import ButtonGroup from 'react-bootstrap/lib/ButtonGroup';
 import DropdownButton from 'react-bootstrap/lib/DropdownButton';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import FormControl from 'react-bootstrap/lib/FormControl';
+import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 
 class Nav extends React.Component {
   constructor(props){
@@ -24,13 +25,13 @@ class Nav extends React.Component {
             </ButtonGroup>
             <ButtonGroup>
               <Button>Sign Up</Button>
-              <DropdownButton id = "login" title = "Login">
+              <DropdownButton pullRight id = "login" title = "Login">
                 <form>
-                  <FormGroup>
-                    <label for = "username">Username</label>
-                    <FormControl type = "text" id = "username" />
-                    <label for = "password">Password</label>
-                    <FormControl type = "text" id = "password" />
+                  <FormGroup controlId = "login">
+                    <ControlLabel>Username</ControlLabel>
+                    <FormControl type = "text" />
+                    <ControlLabel>Password</ControlLabel>
+                    <FormControl type = "text" />
                   </FormGroup>
                 </form>
               </DropdownButton>
