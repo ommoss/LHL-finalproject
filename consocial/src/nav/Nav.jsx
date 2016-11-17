@@ -15,8 +15,7 @@ class Nav extends React.Component {
 
   render() {
     return(
-
-      <Row>
+      <Row id = "navBar">
         <Col xs={6} md={6}>
         <h1>Consocial</h1>
         </Col>

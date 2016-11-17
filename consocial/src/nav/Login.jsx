@@ -15,7 +15,7 @@ import ControlLabel from 'react-bootstrap/lib/ControlLabel';
     return(
       <DropdownButton pullRight id = "login" title = "Login">
         <form>
-          <FormGroup controlId = "login">
+          <FormGroup controlId = "login" >
             <ControlLabel>Username</ControlLabel>
             <FormControl type = "text" />
             <ControlLabel>Password</ControlLabel>
