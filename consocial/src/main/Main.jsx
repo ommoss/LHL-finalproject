@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import GoogleMap from './GoogleMap.jsx'
+import GoogleMap from './GoogleMap.jsx';
+import SideBar from './SideBar.jsx';
+import Col from 'react-bootstrap/lib/Col';
 
 class Main extends React.Component {
     constructor(props){
@@ -10,7 +12,14 @@ class Main extends React.Component {
    render() {
       return (
       <div>
+        <Col xs={4} md={4}>
+          <SideBar />
+        </Col>
+        <div>
+        <Col xs={8} md={8}>
           <GoogleMap />
+        </Col>
+        </div>
       </div>
     );
   }

@@ -13,7 +13,7 @@ class App extends React.Component {
       return (
       <div>
         <div>
-        <Nav />
+          <Nav />
         </div>
         <div>
           <Main />
