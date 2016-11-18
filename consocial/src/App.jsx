@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Nav from './nav/Nav.jsx'
-
+import SimpleMap from './googlemap/GoogleMap.jsx'
 
 class App extends React.Component {
    constructor(props){
@@ -13,7 +13,12 @@ class App extends React.Component {
    render() {
       return (
       <div>
-        <Nav></Nav>
+        <div>
+        <Nav />
+        </div>
+        <div>
+          <SimpleMap />
+        </div>
       </div>
     );
   }

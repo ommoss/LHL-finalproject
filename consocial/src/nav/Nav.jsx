@@ -26,7 +26,6 @@ class Nav extends React.Component {
                 <Button>Find tournament</Button>
               </ButtonGroup>
               <ButtonGroup>
-                <Button>Sign Up</Button>
                 <Login />
               </ButtonGroup>
           </ButtonToolbar>
