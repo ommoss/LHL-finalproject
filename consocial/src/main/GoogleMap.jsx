@@ -6,9 +6,7 @@ class GoogleMap extends React.Component {
       super(props);
       this.state = {
         google: "",
-        position: {
-          lat: 48.4167,
-          lng: -123.367},
+        position: {},
         selectedPlace: "LHL"
     }
     this.geoFindMe = this.geoFindMe.bind(this);
@@ -16,8 +14,6 @@ class GoogleMap extends React.Component {
 
   }
   geoFindMe() {
-
-    console.log(this)
 
   if (!navigator.geolocation){
     console.log("Browser is not compatible");
@@ -29,21 +25,19 @@ class GoogleMap extends React.Component {
   navigator.geolocation.getCurrentPosition(this.success, error);
 }
   success(position) {
-    console.log(this)
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
     this.setState({position:
       {lat: latitude,
         lng: longitude}})
-
   }
     render() {
       return (
         <Map
         google={window.google}
-           initialCenter={this.state.position}
-        zoom={14}
-        onReady = {this.geoFindMe}>
+        onOpen = {this.geoFindMe}
+        mapCenter={this.state.position}
+        zoom={14}>
           <Marker
           name='LHL'
           position={this.state.position} />
