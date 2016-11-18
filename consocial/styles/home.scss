@@ -1,3 +1,4 @@
 nav h1 { margin: 0; padding: 0;}
-.navRight{float: right;}
-#navBar {border-bottom: 1px solid black;}
+.navRight{position: absolute; right: 0; top: 2em;}
+#navBar {position: relative; border-bottom: 1px solid black;}
+.map {border: 1px solid black;}

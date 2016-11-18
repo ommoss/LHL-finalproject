@@ -16,7 +16,7 @@ class Main extends React.Component {
           <SideBar />
         </Col>
         <div>
-        <Col xs={8} md={8}>
+        <Col id = "map" xs={8} md={8}>
           <GoogleMap />
         </Col>
         </div>

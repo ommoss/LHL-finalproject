@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Map, Marker, InfoWindow} from 'google-maps-react'
+import Map, {Marker, InfoWindow} from 'google-maps-react'
 class GoogleMap extends React.Component {
      constructor(props){
       super(props);
@@ -15,6 +15,10 @@ class GoogleMap extends React.Component {
       return (
         <Map
         google={window.google}
+           initialCenter={{
+              lat: 48.4167,
+              lng: -123.367
+            }}
         zoom={14}>
           <Marker
           name='LHL'
