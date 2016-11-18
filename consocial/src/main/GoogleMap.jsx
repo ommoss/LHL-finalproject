@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Map, Marker, InfoWindow} from 'google-maps-react'
+
+
+
+
 class GoogleMap extends React.Component {
      constructor(props){
       super(props);
