@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Map, {Marker, InfoWindow} from 'google-maps-react'
+
+
+
+
+
 class GoogleMap extends React.Component {
      constructor(props){
       super(props);
@@ -25,17 +30,19 @@ class GoogleMap extends React.Component {
   navigator.geolocation.getCurrentPosition(this.success, error);
 }
   success(position) {
-    var latitude  = position.coords.latitude;
-    var longitude = position.coords.longitude;
+    let latitude  = position.coords.latitude;
+    let longitude = position.coords.longitude;
     this.setState({position:
       {lat: latitude,
         lng: longitude}})
+    return position = {lat: latitude, lng: longitude}
   }
     render() {
       return (
         <Map
         google={window.google}
         onOpen = {this.geoFindMe}
+        initialPosition = {this.geoFindMe}
         mapCenter={this.state.position}
         zoom={14}>
           <Marker
