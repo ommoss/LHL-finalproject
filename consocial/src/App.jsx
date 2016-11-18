@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Nav from './nav/Nav.jsx'
-import SimpleMap from './googlemap/GoogleMap.jsx'
+import Main from './main/Main.jsx'
 
 class App extends React.Component {
-   constructor(props){
+    constructor(props){
       super(props);
       this.socket = new WebSocket("ws://localhost:4000");
-      this.state = {}
-   }
+    }
 
    render() {
       return (
@@ -17,7 +16,7 @@ class App extends React.Component {
         <Nav />
         </div>
         <div>
-          <SimpleMap />
+          <Main />
         </div>
       </div>
     );
