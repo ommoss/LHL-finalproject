@@ -1,7 +1,14 @@
 nav h1 { margin: 0; padding: 0;}
 
-.navRight{float: right;}
-#navBar {border-bottom: 1px solid black;}
+.navRight{
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+
+}
+#navBar {
+  border-bottom: 1px solid black;
+}
 
 .well {
   background-color: white;
@@ -12,5 +19,5 @@ nav h1 { margin: 0; padding: 0;}
     color: white;
     background-color: #ffa31a;
     border-color: white;
-      }
+}
 
