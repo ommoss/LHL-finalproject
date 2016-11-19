@@ -13,7 +13,7 @@ class Main extends React.Component {
       return (
       <div>
         <Col xs={4} md={4}>
-          <SideBar />
+          <SideBar data={this.props.data}/>
         </Col>
         <div>
         <Col id = "map" xs={8} md={8}>

@@ -7,6 +7,16 @@ class App extends React.Component {
     constructor(props){
       super(props);
       this.socket = new WebSocket("ws://localhost:4000");
+       this.state = {
+         data: {
+            tournamentName: "MarioCart Special",
+            tournamentLocation: "Garricks Head Pub",
+            tournamentStart: "4:00pm",
+            tournamentDate: "Dec 10, 2016",
+            tournamentPlayerMax: 8,
+            tournamentPlayerCurrent: 8
+          }
+      }
     }
 
    render() {
@@ -16,7 +26,7 @@ class App extends React.Component {
           <Nav />
         </div>
         <div>
-          <Main />
+          <Main data={this.state.data}/>
         </div>
       </div>
     );
