@@ -16,6 +16,7 @@ class SideBar extends React.Component {
         <h1>Tournaments near you!</h1>
 
         <div className="well" id="tournament-box">
+
             <h3><span id="tournament-name" class ="tourn-info">{this.props.data.tournamentName}</span></h3>
             <hr/>
             <h4>Game Type: <span id="tournament-game-type" class ="tourn-info">{this.props.data.tournamentLocation}</span></h4>
@@ -24,6 +25,7 @@ class SideBar extends React.Component {
             <h4>Date: <span id="tournament-date" class ="tourn-info">{this.props.data.tournamentDate}</span></h4>
             <h4>Max Players: <span id="tournament-player-max" class ="tourn-info"> {this.props.data.tournamentPlayerMax} </span></h4>
             <h4>Current Players: <span id="tournament-player-current" class ="tourn-info"> {this.props.data.tournamentPlayerCurrent} </span></h4>
+
             <button type="submit" className="btn btn-default">Join Tournament</button>
             <button type="submit" className="btn btn-default">More Details</button>
           </div>
