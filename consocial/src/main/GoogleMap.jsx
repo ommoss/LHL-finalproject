@@ -7,7 +7,6 @@ class GoogleMap extends React.Component {
       super(props);
       this.state = {
         google: "",
-        position: this.geoFindMe,
         selectedPlace: "LHL"
     }
   }
@@ -17,7 +16,6 @@ class GoogleMap extends React.Component {
       <Map
         google={window.google}
         zoom={14}>
-        <Marker name='LHL' />
         <InfoWindow
           onClose={this.onInfoWindowClose}>
             <div>
