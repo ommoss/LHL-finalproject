@@ -19,7 +19,7 @@ class Main extends React.Component {
         <Col id = "map" xs={8} md={8}>
           <GoogleMap />
         </Col>
-        </div>
+         </div>
       </div>
     );
   }
