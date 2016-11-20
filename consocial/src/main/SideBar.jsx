@@ -19,7 +19,7 @@ class SideBar extends React.Component {
 
             <h3><span id="tournament-name" class ="tourn-info">{this.props.data.tournamentName}</span></h3>
             <hr/>
-            <h4>Game Type: <span id="tournament-game-type" class ="tourn-info">{this.props.data.tournamentLocation}</span></h4>
+            <h4>Game Type: <span id="tournament-game-type" class ="tourn-info">{this.props.data.tournamentGameType}</span></h4>
             <h4>Location: <span id="tournament-location" class ="tourn-info">{this.props.data.tournamentLocation}</span></h4>
             <h4>Start Time: <span id="tournament-start-time" class ="tourn-info">{this.props.data.tournamentStart}</span></h4>
             <h4>Date: <span id="tournament-date" class ="tourn-info">{this.props.data.tournamentDate}</span></h4>
