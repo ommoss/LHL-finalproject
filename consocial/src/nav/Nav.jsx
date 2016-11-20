@@ -7,10 +7,13 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Login from './Login.jsx';
 
+
 class Nav extends React.Component {
   constructor(props){
     super(props);
   }
+
+
 
   render() {
     return(
@@ -21,7 +24,7 @@ class Nav extends React.Component {
         <Col xs={6} md={6}>
           <ButtonToolbar className = "navRight">
             <ButtonGroup>
-                <Button>Create tournament</Button>
+                <Button id ="tournbtn">Create tournament</Button>
                 <Button>Find tournament</Button>
               </ButtonGroup>
               <ButtonGroup>
