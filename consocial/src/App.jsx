@@ -10,6 +10,7 @@ class App extends React.Component {
        this.state = {
          data: {
             tournamentName: "MarioCart Special",
+            tournamentGameType: "MarioCart",
             tournamentLocation: "Garricks Head Pub",
             tournamentStart: "4:00pm",
             tournamentDate: "Dec 10, 2016",
